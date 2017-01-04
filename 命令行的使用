@@ -1,0 +1,47 @@
+mkdir 新建目录
+cd 转换目录
+cp 拷贝文件
+rm 删除文件
+mv 移动文件
+chmod 更改文件权限
+chown 更改文件属主
+nano 文本编辑
+alias sublime='open -a "Sublime Text"'
+
+
+
+git cherry-pick <commit>
+git-summary
+git-effort
+git-extras
+git rebase等于在某一个分支上重新模拟一次提交
+git tag -a V1.2 -m ‘webSite Version 1.2’//创建标签
+git tag 查看标签
+git show V1.2 查看附注信息
+git push origin —tags 同步到远程代码库
+git tag -d V1.2删除标签
+git fetch origin tag V1.2
+git diff 查看具体修改的内容
+git log --pretty=oneline查看提交的日志
+git reset --hard HEAD^回到上一个版本上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
+git reset --hard 3628164 如果我们又想回到之前回退之前的版本,可以使用git reset—hard +commitId
+pull --ff-only origin develop
+git checkout -- readme.txt把readme.txt文件在工作区的修改全部撤销，这里有两种情况：
+一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
+
+一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
+git reset HEAD file可以把暂存区的修改撤销掉（unstage），重新放回工作区
+git rm删除文件,删除完后必须git commit提交一次
+git log --graph --pretty=oneline --abbrev-commit以图像界面展示分支管理log
+git merge --no-ff -m "merge with no-ff" dev合并dev分支禁用Fast forward
+git stash可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作
+git stash list查看工作现场
+git stash apply恢复工作现场
+git stash drop删除保存记录
+git stash pop恢复的同时删除记录
+git branch -D feature-vulcan没有合并的分支使用这个条命令删除
+git checkout -b dev origin/dev创建远程的dev分支到本地
+git branch --set-upstream branch-name origin/branch-name本地分支与远程分支创建链接
+
+
+
