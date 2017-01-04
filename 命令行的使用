@@ -44,4 +44,14 @@ git checkout -b dev origin/dev创建远程的dev分支到本地
 git branch --set-upstream branch-name origin/branch-name本地分支与远程分支创建链接
 
 
+//生成ssh key
+cd ~/.ssh 查看ssh key
+ls
+//生成key
+ssh-keygen
+
+cat ~/.ssh/id_rsa.pub查看公key
+
+
+
 
